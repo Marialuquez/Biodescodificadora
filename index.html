@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodescodificación - Sanación Profunda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Playfair+Display:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            --soft-pink: #fdf0f0;
+            --gradient-start: #fbc2eb;
+            --gradient-end: #a6c1ee;
+            --glass: rgba(255, 255, 255, 0.45);
+            --text-dark: #4a424e;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(160deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            background-attachment: fixed;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .phone-container {
+            width: 100%;
+            max-width: 480px;
+            min-height: 100vh;
+            padding: 40px 20px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .avatar-wrapper {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 20px;
+        }
+
+        .avatar-ring {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            padding: 3px;
+        }
+
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: white;
+            padding: 3px;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .tagline {
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            font-weight: 600;
+        }
+
+        .bio-card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.6);
+            border-radius: 30px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            line-height: 1.7;
+        }
+
+        .bio-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .insta-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .insta-item {
+            aspect-ratio: 1/1;
+            background: rgba(255,255,255,0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .insta-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .video-box {
+            width: 100%;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            background: #000;
+            margin-bottom: 40px;
+        }
+
+        .video-box iframe {
+            width: 100%;
+            aspect-ratio: 9/16;
+            border: none;
+        }
+
+        .links-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .action-btn {
+            background: white;
+            padding: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .action-btn:active {
+            transform: scale(0.95);
+        }
+
+        .action-btn.primary {
+            background: var(--text-dark);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.7rem;
+            opacity: 0.6;
+            padding-bottom: 40px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="phone-container">
+        <header>
+            <div class="avatar-wrapper">
+                <div class="avatar-ring"></div>
+                <img src="f/pfp.jpg" alt="Bio" class="avatar-img">
+            </div>
+            <h1>[Nombre de tu vieja]</h1>
+            <p class="tagline">Biodescodificación Emocional</p>
+        </header>
+
+        <section class="bio-card">
+            <span class="bio-title">Tu cuerpo habla...</span>
+            <p>Acompaño procesos de sanación profunda a través de la Biodescodificación. Entender el origen emocional de nuestros síntomas es el primer paso hacia la libertad. Sesiones personalizadas online y presenciales.</p>
+        </section>
+
+        <div class="insta-grid">
+            <div class="insta-item"><img src="f/post1.jpg" alt="post"></div>
+            <div class="insta-item"><img src="f/post2.jpg" alt="post"></div>
+            <div class="insta-item"><img src="f/post3.jpg" alt="post"></div>
+        </div>
+
+        <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div>
+
+        <nav class="links-menu">
+            <a href="https://wa.me/NUMERO" class="action-btn primary">
+                💬 Agendar Sesión Personalizada
+            </a>
+            <a href="https://instagram.com/USUARIO" class="action-btn">
+                📸 Seguime en Instagram
+            </a>
+            <a href="#" class="action-btn">
+                ✨ Talleres y Cursos Online
+            </a>
+            <a href="#" class="action-btn">
+                🎙️ Escuchar mi Podcast
+            </a>
+        </nav>
+
+        <footer>
+            HECHO POR TU HIJO FAVORITO &bull; 2026
+        </footer>
+    </div>
+
+</body>
+</html>
